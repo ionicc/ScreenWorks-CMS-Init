@@ -9,3 +9,8 @@ const app = express();
 app.listen(3000, () => {
   console.log("Server listening on 3000");
 });
+
+//Handling the root get req.
+app.get('/',(req,res,next) => {
+  res.sendFile(__dirname + '/index.html');
+});
