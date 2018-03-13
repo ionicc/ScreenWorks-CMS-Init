@@ -1,13 +1,11 @@
 const express = require('express');
 const app = express();
 
-//Initialising the server --Sagar
-
-//Zzz, Dun remember how to initialse on the environment's port
-//I'll do it in the later commits
+//Initialising the server
+const PORT = process.env.PORT || 3000
 
 app.listen(3000, () => {
-  console.log("Server listening on 3000");
+  console.log('Server listening on 3000 ${PORT}');
 });
 
 //Handling the root get req.
