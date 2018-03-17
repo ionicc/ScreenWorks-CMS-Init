@@ -1,0 +1,23 @@
+<html lang='en'>
+  <head>
+    Test
+  </head>
+  <body>
+    <h4>Just a test server for now</h4>
+
+    <form action="/links" method="POST">
+      <input type="text" placeholder="link" name="link">
+      <button type="submit">Submit</button>
+
+    <ul class="links">
+      <% for(var i=0; i<links.length; i++) {%>
+        <li class="link">
+          <img src="<%= links[i].link %>" alt ="" class="signage-images"/>
+        </li>
+      <% } %>
+    </ul>
+
+
+    </form>
+  </body>
+</html>
